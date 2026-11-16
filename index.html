@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="A gentle companion for people living with dementia and the family who care for them."
+    />
+    <title>Recogni.app</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ==== Page map ======================================================
+     #home      Hero (app phones)
+     #features  Four feature cards with phone screens
+     #control   "Stay in touch" cards with photos
+     #safety    Safety icon row
+     #pricing   Plans
+     #join      Early-access form (Help Center link goes here)
+     footer     Product / Support / Follow us
+     ===================================================================== -->
+
+    <!-- ========================================================= 
+      NEED LOGO FOR THE NAV AND HERO SECTION
+  ===================================================================== -->
+    <header>
+      <div class="wrap">
+        <nav aria-label="Main">
+          <a aria-label="Recogni home" class="recogni" href="#home">
+            Recogni
+          </a>
+          <div class="links">
+            <a href="#home"> Home </a>
+            <a href="#features"> Features </a>
+            <a href="#mobileapp"> Mobile App </a>
+            <a href="#about"> About Us </a>
+            <a href="#join"> Help Center </a>
+          </div>
+          <div class="cta2">
+            <a class="btn o" href="#pricing"> See Plans </a>
+            <a class="btn" href="#join"> Get Early Access </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="panel">
+          <div class="copy">
+            <h1>
+              Real-time location,
+              <br />
+              <span> Real-time connection. </span>
+            </h1>
+            <p>
+              A gentle companion for people living with dementia and the family
+              who care for them.
+            </p>
+          </div>
+          <div aria-label="Recogni app preview" class="phones">
+            <div class="ph ph1">
+              <img
+                alt="Recogni welcome screen"
+                class="pimg pimg--hero-welcome"
+                src="assets/images/phones/phone-hero-welcome.webp"
+              />
+            </div>
+            <div class="ph ph2">
+              <img
+                alt="Live location map showing a safe zone around Margaret's house"
+                class="pimg pimg--hero-live-map"
+                src="assets/images/phones/phone-hero-live-map.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="wrap">
+          <h2>Everything your family needs, at their fingertips</h2>
+          <p class="sub">Stay informed, stay connected, stay safe.</p>
+          <div class="grid2">
+            <article class="fcard">
+              <div class="txt">
+                <h3>Set up a safe zone in minutes</h3>
+                <p>
+                  Draw a safe zone around home, pick a size from 100 m to 1 km,
+                  and get an alert the moment your loved one leaves it.
+                </p>
+              </div>
+              <div class="shot blue">
+                <div class="pbox">
+                  <img
+                    alt="Safe-zone setup screen with a size slider"
+                    class="pimg pimg--feature-safe-zone"
+                    src="assets/images/phones/phone-feature-safe-zone.webp"
+                  />
+                </div>
+              </div>
+            </article>
+            <article class="fcard">
+              <div class="txt">
+                <h3>Just ask: “Where am I?”</h3>
+                <p>
+                  Voice-first help means no menus to learn. Say “Where am I?” or
+                  “I am lost” and Recogni guides the way.
+                </p>
+              </div>
+              <div class="shot navy">
+                <div class="pbox">
+                  <img
+                    alt="Voice help screen: Where am I?"
+                    class="pimg pimg--feature-voice-help"
+                    src="assets/images/phones/phone-feature-voice-help.webp"
+                  />
+                </div>
+              </div>
+            </article>
+            <article class="fcard">
+              <div class="txt">
+                <h3>See them, room by room</h3>
+                <p>
+                  Live room tracking shows where they are at home and flags
+                  moments like the front door opening.
+                </p>
+              </div>
+              <div class="shot blue">
+                <div class="pbox">
+                  <img
+                    alt="Room-by-room tracking screen with a front door alert"
+                    class="pimg pimg--feature-room-tracking"
+                    src="assets/images/phones/phone-feature-room-tracking.webp"
+                  />
+                </div>
+              </div>
+            </article>
+            <article class="fcard">
+              <div class="txt">
+                <h3>Never miss a medicine</h3>
+                <p>
+                  Gentle, one-step-at-a-time reminders tell them when to take
+                  their medicine and let you know it was done.
+                </p>
+              </div>
+              <div class="shot navy">
+                <div class="pbox">
+                  <img
+                    alt="Medicine reminder screen"
+                    class="pimg pimg--feature-medicine"
+                    src="assets/images/phones/phone-feature-medicine.webp"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-video" id="mobileapp">
+        <div class="wrap">
+          <div class="promo-heading">
+            <span class="promo-label">APP DEMO</span>
+            <h2>Care made simpler. <span>Life made safer.</span></h2>
+            <p>
+              Discover how Recogni helps families stay connected, informed, and
+              reassured through everyday care.
+            </p>
+          </div>
+
+          <div class="video-container">
+            <video id="recogniPromo" controls playsinline preload="auto">
+              <source
+                src="/assets/images/video-promotional.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+
+          <p class="video-caption">
+            A closer look at how Recogni brings families peace of mind.
+          </p>
+        </div>
+      </section>
+
+      <section class="alt" id="control">
+        <div class="wrap">
+          <h2>Stay in touch. Every step of the way.</h2>
+          <p class="sub">
+            Recogni gives caregivers real-time alerts, two-way calls, and a
+            clear view of the day.
+          </p>
+          <div class="grid3">
+            <article class="stayintouch" style="--c: #e9f1ff">
+              <h3>Check in at a glance</h3>
+              <p>
+                See where they are, how they are doing, and their device battery
+                in one view.
+              </p>
+              <img
+                alt="A caregiver taking notes while an older woman has her blood pressure checked"
+                src="assets/images/photos/photo-caregiver-check-in.webp"
+              />
+            </article>
+            <article class="stayintouch" style="--c: #e8f7ee">
+              <h3>Stay informed in real time</h3>
+              <p>
+                Instant alerts tell you when they leave a safe zone or stop
+                moving.
+              </p>
+              <img
+                alt="A hand tapping a smartwatch to read a new message alert"
+                src="assets/images/photos/photo-smartwatch-alert.webp"
+              />
+            </article>
+            <article class="stayintouch" style="--c: #fff1e3">
+              <h3>Never miss a moment</h3>
+              <p>
+                Medicine reminders and daily-routine prompts keep the day on
+                track, even when you cannot be there.
+              </p>
+              <img
+                alt="An older man sorting his medicine into a weekly pill box"
+                src="assets/images/photos/photo-pill-box-reminder.webp"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="safety">
+        <div class="wrap">
+          <h2>Built to keep them safe</h2>
+          <p class="sub">
+            Care that works quietly in the background, so they can stay
+            independent.
+          </p>
+          <div class="grid4 sf">
+            <div>
+              <span class="ib">
+                <img src="assets/icons/secure.svg" alt="" />
+              </span>
+              <h3>Safe-zone alerts</h3>
+              <p>Get notified the moment they leave a safe zone.</p>
+            </div>
+            <div>
+              <span class="ib">
+                <img src="assets/icons/vitals.svg" alt="" />
+              </span>
+              <h3>Movement tracking</h3>
+              <p>Know when someone has not moved for a while.</p>
+            </div>
+            <div>
+              <span class="ib">
+                <img src="assets/icons/phone.svg" alt="" />
+              </span>
+              <h3>Two-way calls</h3>
+              <p>Call or message your loved one with one tap.</p>
+            </div>
+            <div>
+              <span class="ib">
+                <img src="assets/icons/people.svg" alt="" />
+              </span>
+              <h3>Caregiver circle</h3>
+              <p>
+                Share care with family. Premium Plus supports up to 6 members.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="wrap aboutgrid">
+          <div class="abouttxt">
+            <h2>About <span>Us</span></h2>
+            <p>
+              Recogni was created to support families caring for loved ones
+              living with early-stage dementia. We built Recogni to make
+              everyday care easier, safer, and more connected while respecting
+              each person’s independence.
+            </p>
+            <p>
+              Recogni brings together voice-first assistance, gentle medicine
+              and routine reminders, safe-zone alerts, location updates, and
+              simple family communication. Our goal is to provide helpful
+              support without making technology complicated or overwhelming.
+            </p>
+            <h3>Goals</h3>
+            <ul class="goals">
+              <li>
+                Help individuals with early-stage dementia stay independent.
+              </li>
+              <li>Give families real-time updates and peace of mind.</li>
+              <li>Make care technology simple, respectful, and easy to use.</li>
+              <li>
+                Support safer routines through reminders and safe-zone alerts.
+              </li>
+              <li>
+                Strengthen communication between loved ones and caregivers.
+              </li>
+              <li>
+                Continuously improve Recogni based on the needs of families and
+                care communities.
+              </li>
+            </ul>
+          </div>
+          <div class="aboutcard">
+            <!-- IMAGE PLACEHOLDER: add your photo here, for example:
+                 <img src="assets/images/photos/about-us.jpg" alt="Describe the photo" />
+                 (it fills the card automatically; the gradient shows until you add it) -->
+            <div class="aboutover">
+              <span class="aboutpill">Our mission</span>
+              <p>
+                Making everyday care easier, safer, and more connected, while
+                respecting each person’s independence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="alt" id="pricing">
+        <div class="wrap">
+          <h2>Pick the plan that fits your family</h2>
+          <p class="sub">
+            Start free. Upgrade when you need more safe zones and more support.
+          </p>
+          <div class="grid3">
+            <article class="pc">
+              <h3>Basic</h3>
+              <div class="price">₱0</div>
+              <p>
+                Voice activation, location sharing, 1 safe zone, and basic
+                reminders.
+              </p>
+            </article>
+            <article class="pc f">
+              <h3>Premium</h3>
+              <div class="price">
+                ₱199
+                <small> /mo </small>
+              </div>
+              <p>
+                Unlimited safe zones, route detection, wandering history, and a
+                memory test.
+              </p>
+            </article>
+            <article class="pc">
+              <h3>Premium Plus</h3>
+              <div class="price">
+                ₱349
+                <small> /mo </small>
+              </div>
+              <p>
+                Everything in Premium, plus a 6-member circle, priority support,
+                and offline mode.
+              </p>
+            </article>
+          </div>
+          <p class="note">
+            <b> Care facilities: </b>
+            licensing at ₱99 per resident per month. A pilot with 20 caregiver
+            and patient pairs is planned before launch.
+          </p>
+        </div>
+      </section>
+      <section class="join" id="join">
+        <div class="wrap cta">
+          <div class="cimg">
+            <img
+              alt="A family together on a sofa"
+              src="assets/images/photos/photo-family.jpeg"
+            />
+          </div>
+          <div class="ctx">
+            <div class="start">Free to start. No payment needed.</div>
+            <h2>Give your family peace of mind</h2>
+            <p>
+              Join the early access list and help shape a gentler way to care.
+            </p>
+            <form id="f" novalidate="">
+              <div>
+                <label for="fname"> Full name </label>
+                <input autocomplete="name" id="fname" required="" />
+              </div>
+              <div>
+                <label for="email"> Email address </label>
+                <input
+                  autocomplete="email"
+                  id="email"
+                  required=""
+                  type="email"
+                />
+              </div>
+              <div>
+                <label for="ddown"> I am a </label>
+                <select id="ddown" required="">
+                  <option value="">Select one</option>
+                  <option>Family caregiver</option>
+                  <option>Person with early-stage dementia</option>
+                  <option>Care facility or senior home</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <button class="btn" type="submit">Get Early Access</button>
+            </form>
+            <div class="fast">
+              <img src="assets/icons/clock.svg" alt="" />
+              Signing up takes under a minute
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="footer">
+          <div>
+            <p style="max-width: 300px; margin: 0; font-size: 0.95rem">
+              A gentle companion for people living with dementia and the family
+              who care for them.
+            </p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li>
+                <a href="#features"> Features </a>
+              </li>
+              <li>
+                <a href="#home"> Mobile App </a>
+              </li>
+              <li>
+                <a href="#pricing"> Pricing </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li>
+                <a href="#join"> Help Center </a>
+              </li>
+            </ul>
+            <h4 style="margin-top: 18px">Questions? Contact us</h4>
+            <ul>
+              <li>customersupport@gmail.com</li>
+              <li>63+ 950 132 2888</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Follow us</h4>
+            <div class="soc">
+              <a
+                aria-label="Instagram"
+                href="https://www.instagram.com/recogniapp"
+              >
+                <img src="assets/icons/instagram.svg" alt="" />
+              </a>
+              <a
+                aria-label="Facebook"
+                href="https://www.facebook.com/recogniapp"
+              >
+                <img src="assets/icons/facebook.svg" alt="" />
+              </a>
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/company/recogniapp"
+              >
+                <img src="assets/icons/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="legal">
+          Recogni is an early-stage product by PeopleCare Inc. Features, plans,
+          and pricing may change before launch. Recogni supports care but does
+          not replace medical advice or emergency services.
+        </p>
+        <div class="copy2">© 2026 PeopleCare Inc. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
