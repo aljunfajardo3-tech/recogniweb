@@ -211,12 +211,12 @@ header {
 }
 
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | links | buttons */
   align-items: center;
-  gap: 34px;
+  gap: 24px;
   height: 68px;
 }
-
 .recogni {
   display: flex;
   align-items: center;
@@ -228,18 +228,18 @@ nav {
 }
 
 .recogni img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: center;
+  gap: 20px;
   font-weight: 500;
   font-size: 0.95rem;
   color: var(--navy);
-  flex: 1;
 }
 
 .links a:hover {
@@ -248,8 +248,8 @@ nav {
 
 .cta2 {
   display: flex;
-  gap: 12px;
-  margin-left: auto;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 /* ============================================================
@@ -689,16 +689,12 @@ nav {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 480px;
+  min-height: 420px;
   padding: 32px;
   border-radius: 28px;
   overflow: hidden;
   text-align: center;
-  background: linear-gradient(
-    145deg,
-    #2a4f8d,
-    #14265e
-  ); /* placeholder until the image is added */
+  background: linear-gradient(145deg, #2a4f8d, #14265e);
 }
 
 .aboutcard img {
@@ -1014,6 +1010,7 @@ footer a:hover {
   .hero .copy {
     padding: 48px 24px 8px;
   }
+
   .phones {
     min-height: 580px;
   }
@@ -1031,29 +1028,27 @@ footer a:hover {
 }
 
 @media (max-width: 820px) {
-  html {
-    scroll-padding-top: 112px;
-  }
   nav {
+    display: flex;
     flex-wrap: wrap;
     height: auto;
     gap: 6px 12px;
     padding: 10px 0 6px;
   }
-  .cta2 .o {
-    display: none;
+  .cta2 {
+    margin-left: auto;
   }
   .links {
     order: 3;
     flex: none;
     width: 100%;
+    justify-content: flex-start;
     gap: 22px;
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 8px;
   }
 }
-
 @media (max-width: 560px) {
   section {
     padding: 72px 0;
@@ -1073,11 +1068,65 @@ footer a:hover {
     width: 44%;
   }
 }
+.logo-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo-btn {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 0 -8px; /* overrides the generic label rule */
+  padding: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 50%;
+}
+
+.logo-toggle:focus-visible + .logo-btn {
+  outline: 3px solid var(--blue2);
+  outline-offset: 4px;
+}
+
+.hero-logo {
+  display: block;
+  width: 96px;
+  height: 96px;
+  user-select: none;
+  animation: logo-spin-a 3s ease-in-out 0.2s 1 both;
+}
+
+/* checked = a different animation name, so it restarts */
+.logo-toggle:checked + .logo-btn .hero-logo {
+  animation-name: logo-spin-b;
+}
+
+@keyframes logo-spin-a {
+  from {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+@keyframes logo-spin-b {
+  from {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
+  .hero-logo {
+    animation: logo-spin-a 3s ease-in-out 0.2s 1 both !important;
+  }
+  .logo-toggle:checked + .logo-btn .hero-logo {
+    animation: logo-spin-b 3s ease-in-out 0.2s 1 both !important;
   }
 }
