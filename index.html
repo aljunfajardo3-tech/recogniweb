@@ -24,13 +24,16 @@
      footer     Product / Support / Follow us
      ===================================================================== -->
 
-    <!-- ========================================================= 
-      NEED LOGO FOR THE NAV AND HERO SECTION
-  ===================================================================== -->
     <header>
       <div class="wrap">
         <nav aria-label="Main">
           <a aria-label="Recogni home" class="recogni" href="#home">
+            <img
+              src="assets/images/photos/recogni-logo-circle-outline.png"
+              alt=""
+              width="30"
+              height="30"
+            />
             Recogni
           </a>
           <div class="links">
@@ -51,6 +54,21 @@
       <section class="hero" id="home">
         <div class="panel">
           <div class="copy">
+            <input
+              type="checkbox"
+              id="logoSpin"
+              class="logo-toggle"
+              aria-label="Spin the logo"
+            />
+            <label for="logoSpin" class="logo-btn">
+              <img
+                class="hero-logo"
+                src="assets/images/photos/recogni-logo-circle.png"
+                alt="Recogni logo"
+                width="96"
+                height="96"
+              />
+            </label>
             <h1>
               Real-time location,
               <br />
@@ -171,14 +189,23 @@
             </p>
           </div>
 
-                    <div class="video-container">
-              <iframe
-                  src="https://www.youtube.com/embed/JOH1Y4JlztI?si=sHmltXULIROmPgz5"
-                  title="Recogni Promotional Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-              </iframe>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/JOH1Y4JlztI?si=sHmltXULIROmPgz5"
+              title="Recogni Promotional Video"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
           </div>
 
           <p class="video-caption">
@@ -288,35 +315,15 @@
               simple family communication. Our goal is to provide helpful
               support without making technology complicated or overwhelming.
             </p>
-            <h3>Goals</h3>
-            <ul class="goals">
-              <li>
-                Help individuals with early-stage dementia stay independent.
-              </li>
-              <li>Give families real-time updates and peace of mind.</li>
-              <li>Make care technology simple, respectful, and easy to use.</li>
-              <li>
-                Support safer routines through reminders and safe-zone alerts.
-              </li>
-              <li>
-                Strengthen communication between loved ones and caregivers.
-              </li>
-              <li>
-                Continuously improve Recogni based on the needs of families and
-                care communities.
-              </li>
-            </ul>
           </div>
           <div class="aboutcard">
-            <!-- IMAGE PLACEHOLDER: add your photo here, for example:
-                 <img src="assets/images/photos/about-us.jpg" alt="Describe the photo" />
-                 (it fills the card automatically; the gradient shows until you add it) -->
+            <img
+              src="assets/images/photos/about-us.jpeg"
+              alt="Describe the photo"
+            />
             <div class="aboutover">
               <span class="aboutpill">Our mission</span>
-              <p>
-                Making everyday care easier, safer, and more connected, while
-                respecting each person’s independence.
-              </p>
+              <p>Making everyday care easier, safer, and more connected.</p>
             </div>
           </div>
         </div>
@@ -484,4 +491,3 @@
     </footer>
   </body>
 </html>
-
