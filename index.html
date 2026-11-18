@@ -10,26 +10,26 @@
       name="description"
       content="A gentle companion for people living with dementia and the family who care for them."
     />
-    <title>Recogni.app</title>
+    <title>Recogni</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <!-- ==== Page map ======================================================
-     #home      Hero (app phones)
-     #features  Four feature cards with phone screens
-     #control   "Stay in touch" cards with photos
-     #safety    Safety icon row
-     #pricing   Plans
-     #join      Early-access form (Help Center link goes here)
-     footer     Product / Support / Follow us
-     ===================================================================== -->
+  <script>
+    const menuBtn = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".links");
 
+    if (menuBtn && links) {
+      menuBtn.addEventListener("click", () => {
+        links.classList.toggle("open");
+      });
+    }
+  </script>
+  <body>
     <header>
       <div class="wrap">
         <nav aria-label="Main">
           <a aria-label="Recogni home" class="recogni" href="#home">
             <img
-              src="assets/images/photos/recogni-logo-outline.png"
+              src="assets/images/photos/recogni-logo-circle-outline.png"
               alt=""
               width="30"
               height="30"
@@ -47,11 +47,16 @@
             <a class="btn o" href="#pricing"> See Plans </a>
             <a class="btn" href="#join"> Get Early Access </a>
           </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero" id="home">
+      <section class="hero" id="home" class="reveal">
         <div class="panel">
           <div class="copy">
             <input
@@ -178,7 +183,7 @@
         </div>
       </section>
 
-      <section class="promo-video" id="mobileapp">
+      <section class="promo-video" id="mobileapp" class="reveal">
         <div class="wrap">
           <div class="promo-heading">
             <span class="promo-label">APP DEMO</span>
@@ -207,14 +212,13 @@
             >
             </iframe>
           </div>
-
           <p class="video-caption">
             A closer look at how Recogni brings families peace of mind.
           </p>
         </div>
       </section>
 
-      <section class="alt" id="control">
+      <section class="alt" id="control" class="reveal">
         <div class="wrap">
           <h2>Stay in touch. Every step of the way.</h2>
           <p class="sub">
@@ -258,7 +262,7 @@
           </div>
         </div>
       </section>
-      <section id="safety">
+      <section id="safety" class="reveal">
         <div class="wrap">
           <h2>Built to keep them safe</h2>
           <p class="sub">
@@ -299,7 +303,7 @@
           </div>
         </div>
       </section>
-      <section id="about" class="about">
+      <section id="about" class="about" class="reveal">
         <div class="wrap aboutgrid">
           <div class="abouttxt">
             <h2>About <span>Us</span></h2>
@@ -373,7 +377,7 @@
           </p>
         </div>
       </section>
-      <section class="join" id="join">
+      <section class="join" id="join" class="reveal">
         <div class="wrap cta">
           <div class="cimg">
             <img
